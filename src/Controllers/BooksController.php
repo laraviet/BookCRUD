@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Laraviet\BookCRUD\Requests\EditBookRequest;
 use Laraviet\BookCRUD\Services\BookServiceContract;
 use Laraviet\BookCRUD\Requests\CreateBookRequest;
+use App\Http\Controllers\Controller;
 
 class BooksController extends Controller
 {
