@@ -21,16 +21,16 @@ class BookCRUDServiceProvider extends ServiceProvider
         $package_name = "book-crud";
 
         //routes
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
         //view
-        $this->loadViewsFrom(__DIR__.'/resources/views', $package_name);
+        $this->loadViewsFrom(__DIR__.'/../resources/views', $package_name);
         $this->publishes([
-                __DIR__.'/resources/views' => resource_path('views/vendor/' . $package_name),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/' . $package_name),
             ]);
 
         //migrations
-        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         /*
         |--------------------------------------------------------------------------
